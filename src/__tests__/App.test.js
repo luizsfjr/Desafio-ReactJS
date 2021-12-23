@@ -47,9 +47,9 @@ describe("App component", () => {
     apiMock.onGet("repositories").reply(200, [
       {
         id: "123",
-        url: "https://github.com/josepholiveira",
-        title: "Desafio ReactJS",
-        techs: ["React", "Node.js"],
+        url: "https://github.com/DS",
+        title: "DS",
+        techs: ['Python', 'React'],
       },
     ]);
 
@@ -57,7 +57,7 @@ describe("App component", () => {
 
     await actWait();
 
-    fireEvent.click(getByText("Remover"));
+    fireEvent.click(getByText('Remover'));
 
     await actWait();
 
